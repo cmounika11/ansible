@@ -1,0 +1,6 @@
+---
+- name: print min and max
+  vars:
+    numbers: [1,30,57,87,98,456]
+  ansible.builtin.debug:
+    msg: "Min is: {{ number | min}}, Max is {{ number | max}}"  
